@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'quicksand';
+    color: white;
+}
+
+main {
+    background-image: url(./img/vikingsbakgrund.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    background-color: rgb(20, 20, 20);
+    margin: 80px;
+    border-radius: 15px;
+    padding: 0px 50px 50px;
+    text-align: center;
+}
+
+.galleri {
+    width: 1200px;
+}
+
+.photo {
+    margin: 5px;
+    padding: 3px;
+    background-color: rgba(212, 139, 44, 0.884);
+}
+
+section {
+    width: 50px;
+    height: 50px;
+}
+
+.contactbox {
+    text-align: center;
+    color: white;
+    margin: 70px 0px 30px;
+    text-decoration: none;
+}
+
+#about {
+    background-color: rgb(20, 20, 20);
+    width: 850px;
+}
+
+.photoGallery {
+    text-align: center;
+}
+
+.sponsor {
+    margin: 30px;
+    height: 180px;
+}
+
+#contactButton {
+    margin-top: 30px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 0.3s;
+    background-color: white;
+    color: black;
+}
+
+#contactButton:hover {
+    background-color: rgb(182, 182, 182);
+    cursor: pointer;
+    width: 220px;
+    transition: all 0.3s;
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.884);
+}
+
+.gameRow {
+    width: 300px;
+}
+
+p {
+    font-size: 19px;
+    color: white;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer a {
+    color: white;
+}
+
+h1 {
+    margin: 50px 0px 30px;
+    font-size: 27px;
+    font-weight: 500;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+#background {
+    background-image: url(./img/vikingsbakgrund.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#backgroundText {
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    height: 180px;
+}
+
+#backgroundText h1 {
+    margin: 50px 50px 10px;
+    color: white;
+}
+
+#backgroundText p {
+    color: beige;
+    text-align: center;
+}
+
+
+/* HEADER */
+
+header {
+    height: 120px;
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#logoPic {
+    margin: 10px;
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul a:hover {
+    background-color: rgba(36, 36, 36, 0.884);
+    transition: all 0.2s;
+}
+
+nav ul li {
+    color: white;
+    display: inline;
+    margin: 30px;
+    font-size: 17px;
+}
+
+nav ul li:hover {
+    color: rgba(212, 139, 44, 0.884);
+    transition: all .2s;
+}
+
+#currentPage {
+    background-color: rgba(36, 36, 36, 0.884);
+}
+
+.menu-btn {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 0px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger {
+    width: 45px;
+    height: 6px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .02);
+    transition: all .2s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 6px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .02);
+    transition: all .2s ease-in-out;
+}
+
+.menu-btn-burger::before {
+    transform: translateY(-16px);
+}
+
+.menu-btn-burger::after {
+    transform: translateY(16px);
+}
+
+.menu-btn.open .menu-btn-burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn-burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+
+/* HEADER - END */
+
+
+/* FOOTER */
+
+footer {
+    position: sticky;
+    height: 250px;
+    background-image: linear-gradient(rgb(12, 12, 12), rgb(26, 26, 26));
+    text-align: center;
+}
+
+footer h2 {
+    padding-top: 30px;
+}
+
+.footerSocials {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#copyright {
+    margin-top: 55px;
+}
+
+
+/* FOOTER - END */
+
+@media only screen and (max-width: 700px) {
+    #backgroundText {
+        background-color: rgb(20, 20, 20);
+        width: 85vw;
+    }
+    #backgroundText h1 {
+        font-size: 18px;
+    }
+    #backgroundText p {
+        color: beige;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 20px;
+    }
+    #about {
+        margin: 80px 20px 80px;
+        padding: 0px 10px 50px;
+    }
+    footer h2 {
+        font-size: 20px;
+    }
+    .footerSocials {
+        height: 50px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .photo {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .matcher {
+        width: 85%;
+        margin: 80px 0px 80px;
+        padding: 0px 10px 50px;
+    }
+    .galleri {
+        margin: 80px 3% 80px;
+        padding: 0px 0px 50px;
+    }
+    h1 {
+        margin: 50px 0px 30px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        height: 110px;
+    }
+    #logo {
+        margin-left: 25px;
+    }
+    #logoPic {
+        margin-top: 10px;
+        height: 90px;
+    }
+    .menu-btn {
+        display: flex;
+    }
+    nav {
+        position: absolute;
+        display: none;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        background-color: rgb(20, 20, 20);
+    }
+    nav ul {
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+
+/*fonts*/
+
+@font-face {
+    src: url(./fonts/Quicksand-VariableFont_wght.ttf);
+    font-family: 'quicksand';
+}
+
+
+/*fonts end*/
