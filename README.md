@@ -1,3 +1,3 @@
 # Mina projekt
 
-Här är en samling av alla mina projekt
+Här är en samling av en del av mina projekt
