@@ -1,0 +1,228 @@
+/* Sidhuvudet logo, firmanamn och nav */
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    padding: 4px;
+    margin: 6px 6px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#logo {
+    color: orange;
+    padding-left: 16px;
+    font-size: xx-large;
+}
+
+#logopicture {
+    height: 80px;
+    border: none;
+}
+
+
+/* Huvudmenyn */
+
+nav {
+    margin-left: auto;
+    /* skuffar menyn till högra kanten */
+}
+
+nav ul {
+    margin: 0px 20px 0;
+    /* bort med inbyggd marginal (shortand 2) */
+    padding: 0;
+    /* Bort med inbyggd padding */
+}
+
+nav li {
+    list-style: none;
+    /* bort med bollar */
+    float: left;
+    /* ordna element bredvid varann på desktop */
+    padding: 10px;
+    /* lite till luft runt li */
+}
+
+nav li>a {
+    text-decoration: none;
+    /* bort med underline */
+    color: rgb(0, 0, 0);
+    /* bort med inbyggd blå/lila text */
+    padding: 8px;
+    /* Förberedelse för hover */
+    border-radius: 4px;
+    padding: 5px 10px 5px;
+    background-color: rgb(173, 230, 181);
+    color: rgb(41, 41, 41);
+    border: rgb(255, 255, 255) solid 1px;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background-color: rgb(174, 221, 179);
+    /* Byter bakgrund on hover "pseudoklass" */
+}
+
+
+/* Allmängällande stilar */
+
+* {
+    box-sizing: border-box;
+    background-color: wheat;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetice Neue", Helvetica, sans-serif;
+}
+
+#container {
+    color: #000000;
+    max-width: 800px;
+    margin: auto;
+}
+
+article {
+    margin: 20px 0 20px;
+    padding: 20px 0 20px;
+    background-color: wheat;
+    border: solid black 2px;
+    padding-left: 10px;
+}
+
+.separator {
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    margin: auto;
+}
+
+#submit {
+    background-color: orange;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 3px 15px 3px;
+}
+
+input {
+    margin: 5px 0 5px;
+}
+
+
+/* Profile */
+
+#profile-description {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 200px;
+    width: 400px;
+    height: 120px;
+    padding: 10px;
+}
+
+
+/* Registrering */
+
+.form-input {
+    padding: 10px 10px 10px;
+    margin-right: 5px;
+    padding-right: 40px;
+    border-radius: 5px;
+    border: solid rgb(0, 0, 0) 1px;
+    margin-bottom: 10px;
+}
+
+.login-button {
+    padding: 5px 10px 5px;
+    background-color: rgb(173, 230, 181);
+    color: rgb(41, 41, 41);
+    border: rgb(255, 255, 255) solid 1px;
+    cursor: pointer;
+}
+
+.register-button {
+    padding: 10px 20px 10px;
+    border-radius: 5px;
+    background-color: lightblue;
+    color: rgb(41, 41, 41);
+    border: rgb(255, 255, 255) solid 1px;
+    cursor: pointer;
+}
+
+.login-register-button {
+    color: rgb(0, 0, 0);
+    background-color: beige;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.header-button {
+    padding: 5px 10px 5px;
+    background-color: lightblue;
+    color: rgb(41, 41, 41);
+    border: rgb(255, 255, 255) solid 1px;
+    cursor: pointer;
+}
+
+.profile-button {
+    padding: 10px 10px 10px;
+    background-color: rgb(218, 230, 173);
+    color: rgb(41, 41, 41);
+    border: rgb(255, 255, 255) solid 1px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.wrong-login {
+    color: red;
+}
+
+
+/* Profile */
+
+.aboutme {
+    width: fit-content;
+    background-color: beige;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    color: rgb(0, 0, 0);
+    bottom: 0;
+    width: 100%;
+    max-width: 790px;
+    padding: 5px;
+}
+
+
+/* Responsiv styling */
+
+@media (max-width: 640px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    nav li {
+        float: none;
+    }
+}
