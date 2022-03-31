@@ -1,0 +1,12 @@
+{
+    "posts": [
+        {
+            "user": "Kevin",
+            "text": "Mitt första inlägg"
+        },
+        {
+            "user": "Tomas",
+            "text": "Jag såg en älg idag"
+        }
+    ]
+}

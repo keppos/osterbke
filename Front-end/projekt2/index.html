@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="./script.js" defer></script>
+    <script src="./jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+
+    <title>Kevins projekt 2</title>
+</head>
+
+<body>
+
+    <!--Max 800px bred container-->
+    <div id="container">
+
+        <!--Logo och meny-->
+        <header>
+            <a href="">
+                <h1>Projekt 2</h1>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="../projekt1/index.html">Projekt 1</a></li>
+                    <li><a href="../projekt2/index.html">Projekt 2</a></li>
+                    <li><a href="../rapport/index.html">Rapport</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section>
+
+            <!--artiklar placerar sig snyggt nedanför varann-->
+            <h2>Memory Game (uppgift 1)</h2>
+            <div class="memoryGame">
+                <div class="cardcontainer">
+                    <div class="card">
+                        <img src="img/cardBack.jpg" class="backCard">
+                        <img src="img/king.png" class="frontCard">
+                    </div>
+                </div>
+
+                <div class="cardcontainer">
+                    <div class="card">
+                        <img src="img/cardBack.jpg" class="backCard">
+                        <img src="img/queen.png" class="frontCard">
+                    </div>
+                </div>
+
+
+
+                <div class="cardcontainer">
+                    <div class="card">
+                        <img src="img/cardBack.jpg" class="backCard">
+                        <img src="img/king.png" class="frontCard">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="memoryGame">
+
+                <div class="cardcontainer">
+                    <div class="card">
+                        <img src="img/cardBack.jpg" class="backCard">
+                        <img src="img/queen.png" class="frontCard">
+                    </div>
+                </div>
+
+                <div class="cardcontainer">
+                    <div class="card">
+                        <img src="img/cardBack.jpg" class="backCard">
+                        <img src="img/king.png" class="frontCard">
+                    </div>
+                </div>
+
+                <div class="cardcontainer">
+                    <div class="card">
+                        <img src="img/cardBack.jpg" class="backCard">
+                        <img src="img/jack.png" class="frontCard">
+                    </div>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <article>
+                <h2>Galleriet (uppgift 2)</h2>
+
+                <img src="../projekt2/img/dog.jpg" alt="en hund" id="galleri">
+                <img src="../projekt2/img/cat.jpg" alt="en katt" class="thumb">
+                <img src="../projekt2/img/snake.jpg" alt="en orm" class="thumb">
+                <img src="../projekt2/img/hamster.jfif" alt="en hamster" class="thumb">
+                <img src="../projekt2/img/dog.jpg" alt="en hund" class="thumb">
+            </article>
+
+
+            <div class="separator"></div>
+
+            <article>
+
+                <h2>Slider (uppgift 3)</h2>
+                <p>Byt färg på artikeln</p>
+
+                <input type="range" min="0" max="255" id="redSlider">
+                <span id="redAmount">0</span>
+                <p>Byt färg på utkanten av webbsidan</p>
+                <input type="range" min="0" max="255" id="greenSlider">
+                <span id="greenAmount">0</span>
+                <p>Byt färg på huvudmenyn</p>
+
+                <input type="range" min="0" max="255" id="blueSlider">
+                <span id="blueAmount">0</span>
+
+            </article>
+
+            <div class="separator"></div>
+
+            <article>
+                <h2>DOM manipulering (uppgift 4)</h2>
+                <p>Klicka på logon för att gömma den.</p>
+                <img src="../projekt2/img/tlk.png" alt="tlk logo" id="hide">
+                <br><br><br>
+                <button id="show">Klicka här för att få tillbaka TLK</button>
+                <br><br><br>
+                <p>Klicka på apan för en monkeyfade :)</p>
+                <img src="../projekt2/img/monkey.jfif" alt="en apa" id="fade">
+                <br><br><br>
+                <button id="fadeIn">Klicka här för att få tillbaka apan</button>
+                <br><br><br>
+
+                <p>Klicka på katten och säg hejdå</p>
+                <img src="../projekt2/img/nyan.png" alt="nyan cat" id="animate">
+                <br><br><br>
+                <button id="animateIn">Klicka här för att få tillbaka din katt</button>
+                <br><br><br>
+
+
+
+
+            </article>
+
+            <div class="separator"></div>
+
+            <article>
+                <h2>Cookies (uppgift 5)</h2>
+                <button id="login">Logga in</button>
+                <span id="hemlis">En stor hemlighet</span>
+            </article>
+
+            <div class="separator"></div>
+
+            <article>
+                <h2>AJAX (uppgift 6)</h2>
+                <input type="button" id="laddaData" value="Hämta posts">
+                <div id="ajax">Här kommer flera posts...</div>
+            </article>
+
+            <div class="separator"></div>
+
+            <article>
+                <h2>JSON (uppgift 7)</h2>
+                <input type="button" id="laddaApi" value="Hämta json">
+                <div id="json">Här kommer json...</div>
+            </article>
+
+            <div class="separator"></div>
+
+            <article>
+                <h2>Charts (uppgift 8)</h2>
+                <div id="piechart"></div>
+                <div id="highchart"></div>
+            </article>
+
+        </section>
+
+    </div>
+
+    <footer>
+        Design och kod: osterbke <sup> &#169; </sup>
+    </footer>
+
+
+    </div>
+
+</body>
+
+</html>

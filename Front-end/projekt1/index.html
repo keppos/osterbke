@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="./script.js" defer></script>
+    <title>Kevins projekt 1</title>
+</head>
+
+<body>
+
+    <!--Max 800px bred container-->
+    <div id="container">
+
+
+
+        <!--Logo och meny-->
+        <header>
+            <a href="">
+                <h1>Projekt 1</h1>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="../projekt1/index.html">Projekt 1</a></li>
+                    <li><a href="../projekt2/index.html">Projekt 2</a></li>
+                    <li><a href="../rapport/index.html">Rapport</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section>
+
+            <!--artiklar placerar sig snyggt nedanför varann-->
+            <article>
+                <h2>Användardetaljer - Uppg 1</h2>
+                <p>Fyll i förmuläret.</p>
+                <form name="userDetails">
+                    <p>Förnamn <input type="text" name="firstName"> </p>
+                    <p>Efternamn <input type="text" name="lastName"> </p>
+                </form>
+                <button onclick="handleUserDetails()">Skicka</button>
+
+
+            </article>
+
+            <div class="separator"></div>
+
+            <article>
+                <h2>Sifferhantering - Uppg 2</h2>
+                <p>Hur stort lån vill du ansöka om?</p>
+                <form name="money">
+                    <input type="text" name="amount">
+
+                </form>
+
+                <p>Hur lång lånetid vill du ansöka om?</p>
+                <form name="loan">
+                    <input type="text" name="Time">
+                </form>
+
+                <p>Hur stor ränta vill du ansöka om?</p>
+                <form name="loan2">
+                    <input type="text" name="interest">
+
+                </form>
+
+
+                <button id="moneyButton">Ansök</button>
+
+
+
+
+
+            </article>
+
+            <div class="separator"></div>
+
+            <article>
+                <h2>Referensnummber - Uppg 5</h2>
+                <p>Generera ditt referensnummer här.</p>
+                <button id="generateButton2">Generera</button>
+                <p id="genereratNummer"></p>
+            </article>
+
+            <div class="separator"></div>
+
+            <article>
+                <h2>Slumpmässighet och arrays - Uppg 7</h2>
+                <p>Generera lite namn</p>
+                <button id="generateButton">Generera!</button>
+                <p id="genereratNamn"></p>
+            </article>
+
+            <!--stilistiskt element separerar artiklarna-->
+            <div class="separator"></div>
+
+
+            <article>
+                <h2>Sten Sax Påse - Uppg 8</h2>
+                <p>Tryck på knappen för att börja spela.</p>
+                <button id="playButton">Starta spel</button>
+            </article>
+
+            <div class="separator"></div>
+
+            <article>
+                <h2>Händelseobjektet som parameter - Uppg 9</h2>
+                <p>För att få reda på vilken knapp som trycks ner.</p>
+                <input type="text" id="keyBox">
+                <p id="demo"></p>
+
+                <button id="startTimer">Start</button>
+                <button id="splitTimer">Split</button>
+                <button id="stopTimer">Stop</button>
+                <p id="tid"></p>
+            </article>
+
+            <div class="separator"></div>
+
+
+        </section>
+
+        <footer>
+            Design och kod: osterbke <sup> &#169; </sup>
+
+        </footer>
+
+
+    </div>
+
+
+</body>
+
+
+</html>

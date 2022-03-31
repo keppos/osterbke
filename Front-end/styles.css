@@ -1,0 +1,156 @@
+/*Sidhuvudet logo, firmanamn och nav */
+
+header {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*skuffar menyn till högra kanten */
+nav {
+    margin-left: auto;
+}
+
+/* bort med inbyggd marginal */
+nav ul {
+    margin: 40px 20px;
+}
+
+
+header nav li {
+    list-style: none;
+    margin: 0px 10px;
+    float: left; /* ordnar element bredvid varann */
+}
+
+nav li > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#container {
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    min-height: 100vh;
+}
+
+article {
+    margin: 100px;
+    margin-bottom: 100px;
+}
+
+.galleriuppg {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+
+
+
+#galleri {
+    width: 400px;
+    height: 400px;
+}
+
+.thumb {
+    width: 80px;
+    height: 80px;
+}
+
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
+
+/* footer */
+
+footer {
+    color: rgb(0, 0, 0);
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.separator {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 1px;
+}
+
+
+.cardcontainer {
+    position: relative;
+    width: 230px;
+    height: 320px;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+#piechart {
+    width: 900px;
+    height: 500px;
+}
+
+#highchart {
+    height: 400px; 
+    min-width: 310px;
+}
+
+#redAmount {
+    margin-top: 23px;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.backCard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.memoryGame {
+    display: flex;
+    justify-content: center;
+}
+
+.frontCard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+/* media querys */
+
+
+#hemlis {
+    display: none;
+}
